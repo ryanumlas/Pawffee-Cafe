@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* default cursor */
+body {
+  cursor: url("/cursor.png") 0 0, auto;
+}
+
+/* hover */
+button:hover,
+a:hover {
+  cursor: url("/cursor_hover.png") 0 0, auto;
+}
+
+/* clicking */
+button:active {
+  cursor: url("/cursor_hover.png") 0 0, auto;
+}
