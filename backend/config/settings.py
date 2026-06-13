@@ -57,9 +57,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "corsheaders",
-
-    # local
-    "movies",
+    "customers",
+    "orders",
+    "stats",
+    "products"
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
